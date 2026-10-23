@@ -18,4 +18,4 @@ EXPOSE 4200
 
 # Run http-server targeting your specific build output directory
 # -p 4200 sets the port, --proxy handles SPA routing fallback to index.html
-CMD ["http-server", "dist/demo-app/browser", "-p", "4200", "--proxy", "http://localhost:4200?"]
+CMD ["http-server", "dist/demo-app/browser", "-p", "8080", "-a", "0.0.0.0"]
