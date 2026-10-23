@@ -14,7 +14,7 @@ RUN npm install -g http-server
 # Copy the built assets from the builder stage
 COPY --from=builder /app/dist /app/dist
 
-EXPOSE 4200
+EXPOSE 8080
 
 # Run http-server targeting your specific build output directory
 # -p 4200 sets the port, --proxy handles SPA routing fallback to index.html
